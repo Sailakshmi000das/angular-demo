@@ -1,0 +1,14 @@
+<div class="myCards">
+  <div *ngFor="let res of restaurants">
+    <div class="card" style="width: 18rem;">
+      <img src="{{res.restaurant.photos[0].photo.thumb_url}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{res.restaurant.name}}</h5>
+        <p class="card-text">{{res.restaurant.cuisines}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <router-outlet></router-outlet>
+  
